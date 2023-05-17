@@ -22,10 +22,8 @@ void Car::getValues(int year, string name, int vehiclespeed)
 void Car::accelerate()
 {
 	speed+=10;
-	std::cout<<"accelerated speed:"<<speed<<"\n";
 }
 void Car::brake()
 {
 	speed-=10;
-	std::cout<<"decelerated speed:"<<speed<<"\n";
 }

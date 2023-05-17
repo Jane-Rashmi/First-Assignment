@@ -13,10 +13,13 @@ int main()
 	for(k=0;k<5; k++)
 	{
 		car.accelerate();
+		std::cout<<"accelerated speed:"<<car.speed<<"\n";
+
 	}
 	for(j=0;j<5; j++)
 	{
 		car.brake();
+		std::cout<<"decelerated speed:"<<car.speed<<"\n";
 	}
 	return 0;
 }
