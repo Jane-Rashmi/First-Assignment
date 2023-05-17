@@ -3,13 +3,14 @@ using namespace std;
 #include <string.h>
 
 class Car{
-public: 
+private: 
 	int ReleaseYear;
 	string customer;
 	int speed;
+public:	
 	void getValues(int year,string name,int vehiclespeed);
-	void accelerate();
-	void brake();
+	int accelerate();
+	int brake();
 };
 
 void Car::getValues(int year, string name, int vehiclespeed)
@@ -19,11 +20,13 @@ void Car::getValues(int year, string name, int vehiclespeed)
 	speed= vehiclespeed;
 }
 
-void Car::accelerate()
+int Car::accelerate()
 {
 	speed+=10;
+	return speed;
 }
-void Car::brake()
+int Car::brake()
 {
 	speed-=10;
+	return speed;
 }
